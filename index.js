@@ -6,7 +6,7 @@ import mongoose from "mongoose";
  import cookieParser from "cookie-parser";
  import cors from "cors";
 const app=express();
-const port=9090;
+const port=80;
 
 console.log(process.env.DATABASE_URL);
 const url1 = `${process.env.DATABASE_URL}`;
