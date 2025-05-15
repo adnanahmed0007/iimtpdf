@@ -7,7 +7,8 @@ import mongoose from "mongoose";
  import cors from "cors";
 const app=express();
 const port=9090;
- 
+
+console.log(process.env.DATABASE_URL);
 const url1 = `${process.env.DATABASE_URL}`;
 
  app.use(cors(
