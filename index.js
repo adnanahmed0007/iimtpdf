@@ -27,6 +27,12 @@ app.use("/authenttication",router)
 app.use("/user/pdf",router1);
 app.use(express.static('public'))
 
+app.use(async (req, res, next ) => {
+  console.log(req.path);
+  res.redirect("/");
+  next()
+})
+
  
  
 const connect=mongoose.connect(url1)
